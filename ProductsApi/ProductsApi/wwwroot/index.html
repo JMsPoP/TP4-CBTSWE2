@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Produtos</h1>
+
+    <section>
+        <h2>Cadastrar / Editar Produto</h2>
+        <form id="productForm">
+            <input type="hidden" id="productId">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="text" id="description" placeholder="Descrição" required>
+            <input type="number" id="price" placeholder="Preço" required>
+            <input type="number" id="stockQuantity" placeholder="Quantidade em estoque" required>
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Lista de Produtos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="productsTable">
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
